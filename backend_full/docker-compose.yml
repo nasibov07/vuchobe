@@ -1,0 +1,33 @@
+version: "3"
+
+services:
+
+  balancer:
+    build: ./balancer
+    tty: true
+    links:
+      - vuchobe-service    
+    ports:
+      - '80:4000'
+
+  vuchobe-service:
+    build: ./api_service
+    links:
+      - dbpostgress
+
+  dbpostgress:
+    image: postgres
+    restart: always
+    environment:
+      - POSTGRES_PASSWORD=32AschyeS2463xzv
+      - POSTGRES_USER=admin
+      - POSTGRES_DB=vuchobe
+      - PGDATA=/var/lib/postgresql/data/pgdata
+    ports:
+      - "5432:5432"
+    volumes:
+      - dbdata:/var/lib/postgresql/data
+
+volumes:
+  backend:
+  dbdata:
