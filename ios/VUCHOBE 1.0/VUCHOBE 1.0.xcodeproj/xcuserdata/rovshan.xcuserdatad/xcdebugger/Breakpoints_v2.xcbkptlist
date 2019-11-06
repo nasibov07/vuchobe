@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "679809EA-A7D3-4FF0-998F-45C2AA2E1442"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "09C3B738-98EA-4728-9718-B2207AA12BCD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VUCHOBE 1.0/&#x420;&#x435;&#x43a;&#x43e;&#x43c;&#x435;&#x43d;&#x434;&#x430;&#x446;&#x438;&#x44f;/&#x421;&#x43e;&#x437;&#x434;&#x430;&#x43d;&#x438;&#x44f; &#x440;&#x435;&#x43a;&#x43e;&#x43c;&#x435;&#x43d;&#x434;&#x430;&#x446;&#x438;&#x438;&#x306;/CreatRecommendation.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "CreatRecommendation"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D760564A-151D-4913-B9CB-98F3C44755B6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VUCHOBE 1.0/&#x420;&#x435;&#x43a;&#x43e;&#x43c;&#x435;&#x43d;&#x434;&#x430;&#x446;&#x438;&#x44f;/&#x421;&#x43e;&#x437;&#x434;&#x430;&#x43d;&#x438;&#x44f; &#x440;&#x435;&#x43a;&#x43e;&#x43c;&#x435;&#x43d;&#x434;&#x430;&#x446;&#x438;&#x438;&#x306;/CreatRecommendation.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "requestForGettingType(url:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "72FC39EC-8F88-4331-B40B-C95B02E16DA6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VUCHOBE 1.0/&#x420;&#x435;&#x43a;&#x43e;&#x43c;&#x435;&#x43d;&#x434;&#x430;&#x446;&#x438;&#x44f;/&#x413;&#x43b;&#x430;&#x432;&#x43d;&#x43e;&#x435; &#x43e;&#x43a;&#x43d;&#x43e;/Recommendation.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "gettingRecommendation(Urlink:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "78D0791E-7030-4356-8D5B-95F62E3A6F25"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VUCHOBE 1.0/&#x420;&#x435;&#x43a;&#x43e;&#x43c;&#x435;&#x43d;&#x434;&#x430;&#x446;&#x438;&#x44f;/&#x413;&#x43b;&#x430;&#x432;&#x43d;&#x43e;&#x435; &#x43e;&#x43a;&#x43d;&#x43e;/Recommendation.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "gettingRecommendation(Urlink:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A6654163-1E2D-450C-A965-A05FDE0473B9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VUCHOBE 1.0/&#x41f;&#x440;&#x43e;&#x444;&#x438;&#x43b;&#x44c;/Profile.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "212"
+            endingLineNumber = "212"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AA0BCAB3-BD39-4393-BB9B-E910DA8DBDD3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VUCHOBE 1.0/&#x410;&#x432;&#x442;&#x43e;&#x440;&#x438;&#x437;&#x430;&#x446;&#x438;&#x44f;/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "239"
+            endingLineNumber = "239"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "42345F07-D488-429E-B140-EDC18E468674"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VUCHOBE 1.0/&#x410;&#x432;&#x442;&#x43e;&#x440;&#x438;&#x437;&#x430;&#x446;&#x438;&#x44f;/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "195"
+            endingLineNumber = "195"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5635FA87-FB4A-4840-B242-77FBC229BC0E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VUCHOBE 1.0/&#x420;&#x435;&#x43a;&#x43e;&#x43c;&#x435;&#x43d;&#x434;&#x430;&#x446;&#x438;&#x44f;/&#x413;&#x43b;&#x430;&#x432;&#x43d;&#x43e;&#x435; &#x43e;&#x43a;&#x43d;&#x43e;/Recommendation.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -1,0 +1,899 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE2594EA2357175700B3B1B1 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2594E92357175700B3B1B1 /* TabBarController.swift */; };
+		BE26C2B1236DE9870060C885 /* TimeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE26C2B0236DE9870060C885 /* TimeTable.swift */; };
+		BE26C2B4236DEA100060C885 /* TimeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE26C2B3236DEA100060C885 /* TimeCollectionViewCell.swift */; };
+		BE26C2B6236DF5390060C885 /* TimeTableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE26C2B5236DF5390060C885 /* TimeTableModel.swift */; };
+		BE26C2B8236DF5950060C885 /* SingleTon.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE26C2B7236DF5950060C885 /* SingleTon.swift */; };
+		BE26C2BD236E230F0060C885 /* LessonOverflow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE26C2BC236E230F0060C885 /* LessonOverflow.swift */; };
+		BE2D305F2316FC5D00A58D9B /* Recommendation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2D305E2316FC5D00A58D9B /* Recommendation.swift */; };
+		BE2D30632316FD8600A58D9B /* RecommendationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2D30622316FD8600A58D9B /* RecommendationCell.swift */; };
+		BE3D9F9E2348F30500B668E3 /* MyDataPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE3D9F9D2348F30500B668E3 /* MyDataPicker.xib */; };
+		BE3D9FA02348F94D00B668E3 /* MyDataPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3D9F9F2348F94D00B668E3 /* MyDataPicker.swift */; };
+		BE4E54FD237069E60048BEDF /* ContaynerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4E54FC237069E60048BEDF /* ContaynerViewController.swift */; };
+		BE54F9D4230D9D160007D5C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE54F9D3230D9D160007D5C8 /* AppDelegate.swift */; };
+		BE54F9D6230D9D160007D5C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE54F9D5230D9D160007D5C8 /* ViewController.swift */; };
+		BE54F9D9230D9D160007D5C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE54F9D7230D9D160007D5C8 /* Main.storyboard */; };
+		BE54F9DB230D9D170007D5C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE54F9DA230D9D170007D5C8 /* Assets.xcassets */; };
+		BE54F9DE230D9D170007D5C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE54F9DC230D9D170007D5C8 /* LaunchScreen.storyboard */; };
+		BE54F9E9230D9D170007D5C8 /* VUCHOBE_1_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE54F9E8230D9D170007D5C8 /* VUCHOBE_1_0Tests.swift */; };
+		BE54F9F4230D9D170007D5C8 /* VUCHOBE_1_0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE54F9F3230D9D170007D5C8 /* VUCHOBE_1_0UITests.swift */; };
+		BE6A5F8123427BE00046DB66 /* AboutUniversity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A5F8023427BE00046DB66 /* AboutUniversity.swift */; };
+		BE6A5F8423427D7A0046DB66 /* UniversityCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A5F8323427D7A0046DB66 /* UniversityCollectionCell.swift */; };
+		BE731692232BC680005AC187 /* CreatRecommendation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE731691232BC680005AC187 /* CreatRecommendation.swift */; };
+		BE8D55B9233E507C00722B3A /* MyURLAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8D55B8233E507C00722B3A /* MyURLAddress.swift */; };
+		BE8D55BD233E521800722B3A /* ModelClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8D55BC233E521800722B3A /* ModelClass.swift */; };
+		BE8D55C0233E5A4400722B3A /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8D55BF233E5A4400722B3A /* UserData.swift */; };
+		BEAF23A4232EC09C00398083 /* CreatTwoRecommendation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAF23A3232EC09C00398083 /* CreatTwoRecommendation.swift */; };
+		BEB8C3FD23269A06004FDF61 /* ProfilCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB8C3FC23269A06004FDF61 /* ProfilCell.swift */; };
+		BEC18E4B231ED0A90030EA3A /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC18E4A231ED0A90030EA3A /* Profile.swift */; };
+		BEC49663233A97B300D956BE /* CreatLittleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC49662233A97B300D956BE /* CreatLittleCard.swift */; };
+		BED0BE0923104E0A0028FA92 /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED0BE0823104E0A0028FA92 /* Registration.swift */; };
+		BED0BE0C231074A90028FA92 /* AuthJWTParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED0BE0B231074A90028FA92 /* AuthJWTParsing.swift */; };
+		BED0BE0F231086380028FA92 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED0BE0E231086380028FA92 /* Reachability.swift */; };
+		BED8ED1A23422EA2001FA0BC /* RecommandationSelf.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED8ED1923422EA2001FA0BC /* RecommandationSelf.swift */; };
+		BEE70FC0233D466A0050C1DC /* icon60.png in Resources */ = {isa = PBXBuildFile; fileRef = BEE70FBB233D46690050C1DC /* icon60.png */; };
+		BEE70FC1233D466A0050C1DC /* icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = BEE70FBC233D46690050C1DC /* icon120.png */; };
+		BEE70FC2233D466A0050C1DC /* icon180.png in Resources */ = {isa = PBXBuildFile; fileRef = BEE70FBD233D46690050C1DC /* icon180.png */; };
+		BEE70FC3233D466A0050C1DC /* icon40.png in Resources */ = {isa = PBXBuildFile; fileRef = BEE70FBE233D46690050C1DC /* icon40.png */; };
+		BEE70FC4233D466A0050C1DC /* icon1024.png in Resources */ = {isa = PBXBuildFile; fileRef = BEE70FBF233D466A0050C1DC /* icon1024.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE54F9E5230D9D170007D5C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE54F9C8230D9D160007D5C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE54F9CF230D9D160007D5C8;
+			remoteInfo = "VUCHOBE 1.0";
+		};
+		BE54F9F0230D9D170007D5C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE54F9C8230D9D160007D5C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE54F9CF230D9D160007D5C8;
+			remoteInfo = "VUCHOBE 1.0";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BE2594E92357175700B3B1B1 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		BE26C2B0236DE9870060C885 /* TimeTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTable.swift; sourceTree = "<group>"; };
+		BE26C2B3236DEA100060C885 /* TimeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCollectionViewCell.swift; sourceTree = "<group>"; };
+		BE26C2B5236DF5390060C885 /* TimeTableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableModel.swift; sourceTree = "<group>"; };
+		BE26C2B7236DF5950060C885 /* SingleTon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleTon.swift; sourceTree = "<group>"; };
+		BE26C2BC236E230F0060C885 /* LessonOverflow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonOverflow.swift; sourceTree = "<group>"; };
+		BE2D305E2316FC5D00A58D9B /* Recommendation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recommendation.swift; sourceTree = "<group>"; };
+		BE2D30622316FD8600A58D9B /* RecommendationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationCell.swift; sourceTree = "<group>"; };
+		BE3D9F9D2348F30500B668E3 /* MyDataPicker.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyDataPicker.xib; sourceTree = "<group>"; };
+		BE3D9F9F2348F94D00B668E3 /* MyDataPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDataPicker.swift; sourceTree = "<group>"; };
+		BE4E54FC237069E60048BEDF /* ContaynerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContaynerViewController.swift; sourceTree = "<group>"; };
+		BE54F9D0230D9D160007D5C8 /* VUCHOBE 1.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VUCHOBE 1.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE54F9D3230D9D160007D5C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BE54F9D5230D9D160007D5C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BE54F9D8230D9D160007D5C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE54F9DA230D9D170007D5C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE54F9DD230D9D170007D5C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BE54F9DF230D9D170007D5C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE54F9E4230D9D170007D5C8 /* VUCHOBE 1.0Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VUCHOBE 1.0Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE54F9E8230D9D170007D5C8 /* VUCHOBE_1_0Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VUCHOBE_1_0Tests.swift; sourceTree = "<group>"; };
+		BE54F9EA230D9D170007D5C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE54F9EF230D9D170007D5C8 /* VUCHOBE 1.0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VUCHOBE 1.0UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE54F9F3230D9D170007D5C8 /* VUCHOBE_1_0UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VUCHOBE_1_0UITests.swift; sourceTree = "<group>"; };
+		BE54F9F5230D9D170007D5C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE6A5F8023427BE00046DB66 /* AboutUniversity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUniversity.swift; sourceTree = "<group>"; };
+		BE6A5F8323427D7A0046DB66 /* UniversityCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityCollectionCell.swift; sourceTree = "<group>"; };
+		BE731691232BC680005AC187 /* CreatRecommendation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatRecommendation.swift; sourceTree = "<group>"; };
+		BE8D55B8233E507C00722B3A /* MyURLAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyURLAddress.swift; sourceTree = "<group>"; };
+		BE8D55BC233E521800722B3A /* ModelClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelClass.swift; sourceTree = "<group>"; };
+		BE8D55BF233E5A4400722B3A /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		BEAF23A3232EC09C00398083 /* CreatTwoRecommendation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatTwoRecommendation.swift; sourceTree = "<group>"; };
+		BEB8C3FC23269A06004FDF61 /* ProfilCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilCell.swift; sourceTree = "<group>"; };
+		BEC18E4A231ED0A90030EA3A /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		BEC49662233A97B300D956BE /* CreatLittleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatLittleCard.swift; sourceTree = "<group>"; };
+		BED0BE0823104E0A0028FA92 /* Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
+		BED0BE0B231074A90028FA92 /* AuthJWTParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthJWTParsing.swift; sourceTree = "<group>"; };
+		BED0BE0E231086380028FA92 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		BED8ED1923422EA2001FA0BC /* RecommandationSelf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommandationSelf.swift; sourceTree = "<group>"; };
+		BEE70FBB233D46690050C1DC /* icon60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon60.png; sourceTree = "<group>"; };
+		BEE70FBC233D46690050C1DC /* icon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon120.png; sourceTree = "<group>"; };
+		BEE70FBD233D46690050C1DC /* icon180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon180.png; sourceTree = "<group>"; };
+		BEE70FBE233D46690050C1DC /* icon40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon40.png; sourceTree = "<group>"; };
+		BEE70FBF233D466A0050C1DC /* icon1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon1024.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE54F9CD230D9D160007D5C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE54F9E1230D9D170007D5C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE54F9EC230D9D170007D5C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE26C2AF236DE9590060C885 /* Расписание */ = {
+			isa = PBXGroup;
+			children = (
+				BE26C2B9236E229C0060C885 /* xib */,
+				BE26C2B2236DE9950060C885 /* coll */,
+				BE26C2B0236DE9870060C885 /* TimeTable.swift */,
+				BE4E54FC237069E60048BEDF /* ContaynerViewController.swift */,
+			);
+			path = "Расписание";
+			sourceTree = "<group>";
+		};
+		BE26C2B2236DE9950060C885 /* coll */ = {
+			isa = PBXGroup;
+			children = (
+				BE26C2B3236DEA100060C885 /* TimeCollectionViewCell.swift */,
+			);
+			path = coll;
+			sourceTree = "<group>";
+		};
+		BE26C2B9236E229C0060C885 /* xib */ = {
+			isa = PBXGroup;
+			children = (
+				BE26C2BC236E230F0060C885 /* LessonOverflow.swift */,
+			);
+			path = xib;
+			sourceTree = "<group>";
+		};
+		BE2CD4002327D5A500E2DFA9 /* ResursFile */ = {
+			isa = PBXGroup;
+			children = (
+				BEE70FBE233D46690050C1DC /* icon40.png */,
+				BEE70FBB233D46690050C1DC /* icon60.png */,
+				BEE70FBC233D46690050C1DC /* icon120.png */,
+				BEE70FBD233D46690050C1DC /* icon180.png */,
+				BEE70FBF233D466A0050C1DC /* icon1024.png */,
+			);
+			path = ResursFile;
+			sourceTree = "<group>";
+		};
+		BE2D305D2316FC0E00A58D9B /* Рекомендация */ = {
+			isa = PBXGroup;
+			children = (
+				BE731690232BC633005AC187 /* Создания рекомендаций */,
+				BE2D30612316FD5C00A58D9B /* Ячейка главного окна */,
+				BED8ED1823422E39001FA0BC /* Сама рекомендация */,
+				BE2D30602316FD3C00A58D9B /* Главное окно */,
+			);
+			path = "Рекомендация";
+			sourceTree = "<group>";
+		};
+		BE2D30602316FD3C00A58D9B /* Главное окно */ = {
+			isa = PBXGroup;
+			children = (
+				BE2D305E2316FC5D00A58D9B /* Recommendation.swift */,
+				BE2594E92357175700B3B1B1 /* TabBarController.swift */,
+			);
+			path = "Главное окно";
+			sourceTree = "<group>";
+		};
+		BE2D30612316FD5C00A58D9B /* Ячейка главного окна */ = {
+			isa = PBXGroup;
+			children = (
+				BE2D30622316FD8600A58D9B /* RecommendationCell.swift */,
+			);
+			name = "Ячейка главного окна";
+			path = "Ячейка главного окна";
+			sourceTree = "<group>";
+		};
+		BE3D9F9C2348F2E300B668E3 /* MyObject */ = {
+			isa = PBXGroup;
+			children = (
+				BE3D9F9D2348F30500B668E3 /* MyDataPicker.xib */,
+				BE3D9F9F2348F94D00B668E3 /* MyDataPicker.swift */,
+			);
+			path = MyObject;
+			sourceTree = "<group>";
+		};
+		BE54F9C7230D9D160007D5C8 = {
+			isa = PBXGroup;
+			children = (
+				BE54F9D2230D9D160007D5C8 /* VUCHOBE 1.0 */,
+				BE54F9E7230D9D170007D5C8 /* VUCHOBE 1.0Tests */,
+				BE54F9F2230D9D170007D5C8 /* VUCHOBE 1.0UITests */,
+				BE54F9D1230D9D160007D5C8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE54F9D1230D9D160007D5C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE54F9D0230D9D160007D5C8 /* VUCHOBE 1.0.app */,
+				BE54F9E4230D9D170007D5C8 /* VUCHOBE 1.0Tests.xctest */,
+				BE54F9EF230D9D170007D5C8 /* VUCHOBE 1.0UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE54F9D2230D9D160007D5C8 /* VUCHOBE 1.0 */ = {
+			isa = PBXGroup;
+			children = (
+				BE8D55B7233E506700722B3A /* Model */,
+				BE2CD4002327D5A500E2DFA9 /* ResursFile */,
+				BED0BE0D231086270028FA92 /* Бибилиотеки  */,
+				BEC18E48231EC6B00030EA3A /* Изменить профиль */,
+				BED0BE0A231074750028FA92 /* Стили */,
+				BE6A5F7F23427BA10046DB66 /* Об Университете */,
+				BED0BE0723104DA40028FA92 /* Рагистрация */,
+				BE26C2AF236DE9590060C885 /* Расписание */,
+				BE2D305D2316FC0E00A58D9B /* Рекомендация */,
+				BE54FA01230D9D460007D5C8 /* Авторизация */,
+				BEC18E49231ED0500030EA3A /* Профиль */,
+				BE54F9D3230D9D160007D5C8 /* AppDelegate.swift */,
+				BE54F9D7230D9D160007D5C8 /* Main.storyboard */,
+				BE54F9DA230D9D170007D5C8 /* Assets.xcassets */,
+				BE54F9DC230D9D170007D5C8 /* LaunchScreen.storyboard */,
+				BE54F9DF230D9D170007D5C8 /* Info.plist */,
+			);
+			path = "VUCHOBE 1.0";
+			sourceTree = "<group>";
+		};
+		BE54F9E7230D9D170007D5C8 /* VUCHOBE 1.0Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BE54F9E8230D9D170007D5C8 /* VUCHOBE_1_0Tests.swift */,
+				BE54F9EA230D9D170007D5C8 /* Info.plist */,
+			);
+			path = "VUCHOBE 1.0Tests";
+			sourceTree = "<group>";
+		};
+		BE54F9F2230D9D170007D5C8 /* VUCHOBE 1.0UITests */ = {
+			isa = PBXGroup;
+			children = (
+				BE54F9F3230D9D170007D5C8 /* VUCHOBE_1_0UITests.swift */,
+				BE54F9F5230D9D170007D5C8 /* Info.plist */,
+			);
+			path = "VUCHOBE 1.0UITests";
+			sourceTree = "<group>";
+		};
+		BE54FA01230D9D460007D5C8 /* Авторизация */ = {
+			isa = PBXGroup;
+			children = (
+				BE54F9D5230D9D160007D5C8 /* ViewController.swift */,
+			);
+			path = "Авторизация";
+			sourceTree = "<group>";
+		};
+		BE6A5F7F23427BA10046DB66 /* Об Университете */ = {
+			isa = PBXGroup;
+			children = (
+				BE6A5F8223427D350046DB66 /* UniversityCell */,
+				BE6A5F8023427BE00046DB66 /* AboutUniversity.swift */,
+			);
+			path = "Об Университете";
+			sourceTree = "<group>";
+		};
+		BE6A5F8223427D350046DB66 /* UniversityCell */ = {
+			isa = PBXGroup;
+			children = (
+				BE6A5F8323427D7A0046DB66 /* UniversityCollectionCell.swift */,
+			);
+			path = UniversityCell;
+			sourceTree = "<group>";
+		};
+		BE731690232BC633005AC187 /* Создания рекомендаций */ = {
+			isa = PBXGroup;
+			children = (
+				BE731691232BC680005AC187 /* CreatRecommendation.swift */,
+				BEAF23A3232EC09C00398083 /* CreatTwoRecommendation.swift */,
+				BEC49662233A97B300D956BE /* CreatLittleCard.swift */,
+			);
+			name = "Создания рекомендаций";
+			path = "Создания рекомендаций";
+			sourceTree = "<group>";
+		};
+		BE8D55B7233E506700722B3A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BE8D55BB233E520200722B3A /* ModelClass */,
+				BE8D55BE233E5A1E00722B3A /* UserData */,
+				BE3D9F9C2348F2E300B668E3 /* MyObject */,
+				BE8D55BA233E51F700722B3A /* URL */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BE8D55BA233E51F700722B3A /* URL */ = {
+			isa = PBXGroup;
+			children = (
+				BE8D55B8233E507C00722B3A /* MyURLAddress.swift */,
+			);
+			path = URL;
+			sourceTree = "<group>";
+		};
+		BE8D55BB233E520200722B3A /* ModelClass */ = {
+			isa = PBXGroup;
+			children = (
+				BE8D55BC233E521800722B3A /* ModelClass.swift */,
+				BE26C2B5236DF5390060C885 /* TimeTableModel.swift */,
+				BE26C2B7236DF5950060C885 /* SingleTon.swift */,
+			);
+			path = ModelClass;
+			sourceTree = "<group>";
+		};
+		BE8D55BE233E5A1E00722B3A /* UserData */ = {
+			isa = PBXGroup;
+			children = (
+				BE8D55BF233E5A4400722B3A /* UserData.swift */,
+			);
+			path = UserData;
+			sourceTree = "<group>";
+		};
+		BEB8C3FB232699D9004FDF61 /* ProfCell */ = {
+			isa = PBXGroup;
+			children = (
+				BEB8C3FC23269A06004FDF61 /* ProfilCell.swift */,
+			);
+			path = ProfCell;
+			sourceTree = "<group>";
+		};
+		BEC18E48231EC6B00030EA3A /* Изменить профиль */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Изменить профиль";
+			sourceTree = "<group>";
+		};
+		BEC18E49231ED0500030EA3A /* Профиль */ = {
+			isa = PBXGroup;
+			children = (
+				BEB8C3FB232699D9004FDF61 /* ProfCell */,
+				BEC18E4A231ED0A90030EA3A /* Profile.swift */,
+			);
+			path = "Профиль";
+			sourceTree = "<group>";
+		};
+		BED0BE0723104DA40028FA92 /* Рагистрация */ = {
+			isa = PBXGroup;
+			children = (
+				BED0BE0823104E0A0028FA92 /* Registration.swift */,
+			);
+			path = "Рагистрация";
+			sourceTree = "<group>";
+		};
+		BED0BE0A231074750028FA92 /* Стили */ = {
+			isa = PBXGroup;
+			children = (
+				BED0BE0B231074A90028FA92 /* AuthJWTParsing.swift */,
+			);
+			path = "Стили";
+			sourceTree = "<group>";
+		};
+		BED0BE0D231086270028FA92 /* Бибилиотеки  */ = {
+			isa = PBXGroup;
+			children = (
+				BED0BE0E231086380028FA92 /* Reachability.swift */,
+			);
+			path = "Бибилиотеки ";
+			sourceTree = "<group>";
+		};
+		BED8ED1823422E39001FA0BC /* Сама рекомендация */ = {
+			isa = PBXGroup;
+			children = (
+				BED8ED1923422EA2001FA0BC /* RecommandationSelf.swift */,
+			);
+			path = "Сама рекомендация";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE54F9CF230D9D160007D5C8 /* VUCHOBE 1.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE54F9F8230D9D170007D5C8 /* Build configuration list for PBXNativeTarget "VUCHOBE 1.0" */;
+			buildPhases = (
+				BE54F9CC230D9D160007D5C8 /* Sources */,
+				BE54F9CD230D9D160007D5C8 /* Frameworks */,
+				BE54F9CE230D9D160007D5C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VUCHOBE 1.0";
+			productName = "VUCHOBE 1.0";
+			productReference = BE54F9D0230D9D160007D5C8 /* VUCHOBE 1.0.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE54F9E3230D9D170007D5C8 /* VUCHOBE 1.0Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE54F9FB230D9D170007D5C8 /* Build configuration list for PBXNativeTarget "VUCHOBE 1.0Tests" */;
+			buildPhases = (
+				BE54F9E0230D9D170007D5C8 /* Sources */,
+				BE54F9E1230D9D170007D5C8 /* Frameworks */,
+				BE54F9E2230D9D170007D5C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE54F9E6230D9D170007D5C8 /* PBXTargetDependency */,
+			);
+			name = "VUCHOBE 1.0Tests";
+			productName = "VUCHOBE 1.0Tests";
+			productReference = BE54F9E4230D9D170007D5C8 /* VUCHOBE 1.0Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BE54F9EE230D9D170007D5C8 /* VUCHOBE 1.0UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE54F9FE230D9D170007D5C8 /* Build configuration list for PBXNativeTarget "VUCHOBE 1.0UITests" */;
+			buildPhases = (
+				BE54F9EB230D9D170007D5C8 /* Sources */,
+				BE54F9EC230D9D170007D5C8 /* Frameworks */,
+				BE54F9ED230D9D170007D5C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE54F9F1230D9D170007D5C8 /* PBXTargetDependency */,
+			);
+			name = "VUCHOBE 1.0UITests";
+			productName = "VUCHOBE 1.0UITests";
+			productReference = BE54F9EF230D9D170007D5C8 /* VUCHOBE 1.0UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE54F9C8230D9D160007D5C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Rovshan;
+				TargetAttributes = {
+					BE54F9CF230D9D160007D5C8 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					BE54F9E3230D9D170007D5C8 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = BE54F9CF230D9D160007D5C8;
+					};
+					BE54F9EE230D9D170007D5C8 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = BE54F9CF230D9D160007D5C8;
+					};
+				};
+			};
+			buildConfigurationList = BE54F9CB230D9D160007D5C8 /* Build configuration list for PBXProject "VUCHOBE 1.0" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE54F9C7230D9D160007D5C8;
+			productRefGroup = BE54F9D1230D9D160007D5C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE54F9CF230D9D160007D5C8 /* VUCHOBE 1.0 */,
+				BE54F9E3230D9D170007D5C8 /* VUCHOBE 1.0Tests */,
+				BE54F9EE230D9D170007D5C8 /* VUCHOBE 1.0UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE54F9CE230D9D160007D5C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEE70FC0233D466A0050C1DC /* icon60.png in Resources */,
+				BE3D9F9E2348F30500B668E3 /* MyDataPicker.xib in Resources */,
+				BEE70FC1233D466A0050C1DC /* icon120.png in Resources */,
+				BEE70FC2233D466A0050C1DC /* icon180.png in Resources */,
+				BE54F9DE230D9D170007D5C8 /* LaunchScreen.storyboard in Resources */,
+				BE54F9DB230D9D170007D5C8 /* Assets.xcassets in Resources */,
+				BE54F9D9230D9D160007D5C8 /* Main.storyboard in Resources */,
+				BEE70FC3233D466A0050C1DC /* icon40.png in Resources */,
+				BEE70FC4233D466A0050C1DC /* icon1024.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE54F9E2230D9D170007D5C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE54F9ED230D9D170007D5C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE54F9CC230D9D160007D5C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE2D30632316FD8600A58D9B /* RecommendationCell.swift in Sources */,
+				BEAF23A4232EC09C00398083 /* CreatTwoRecommendation.swift in Sources */,
+				BE26C2BD236E230F0060C885 /* LessonOverflow.swift in Sources */,
+				BE2D305F2316FC5D00A58D9B /* Recommendation.swift in Sources */,
+				BE4E54FD237069E60048BEDF /* ContaynerViewController.swift in Sources */,
+				BE8D55C0233E5A4400722B3A /* UserData.swift in Sources */,
+				BE54F9D6230D9D160007D5C8 /* ViewController.swift in Sources */,
+				BE6A5F8423427D7A0046DB66 /* UniversityCollectionCell.swift in Sources */,
+				BE8D55BD233E521800722B3A /* ModelClass.swift in Sources */,
+				BED0BE0C231074A90028FA92 /* AuthJWTParsing.swift in Sources */,
+				BED0BE0923104E0A0028FA92 /* Registration.swift in Sources */,
+				BE26C2B4236DEA100060C885 /* TimeCollectionViewCell.swift in Sources */,
+				BED0BE0F231086380028FA92 /* Reachability.swift in Sources */,
+				BE731692232BC680005AC187 /* CreatRecommendation.swift in Sources */,
+				BEC18E4B231ED0A90030EA3A /* Profile.swift in Sources */,
+				BE26C2B8236DF5950060C885 /* SingleTon.swift in Sources */,
+				BE6A5F8123427BE00046DB66 /* AboutUniversity.swift in Sources */,
+				BE2594EA2357175700B3B1B1 /* TabBarController.swift in Sources */,
+				BE54F9D4230D9D160007D5C8 /* AppDelegate.swift in Sources */,
+				BE3D9FA02348F94D00B668E3 /* MyDataPicker.swift in Sources */,
+				BE26C2B1236DE9870060C885 /* TimeTable.swift in Sources */,
+				BE8D55B9233E507C00722B3A /* MyURLAddress.swift in Sources */,
+				BEB8C3FD23269A06004FDF61 /* ProfilCell.swift in Sources */,
+				BED8ED1A23422EA2001FA0BC /* RecommandationSelf.swift in Sources */,
+				BEC49663233A97B300D956BE /* CreatLittleCard.swift in Sources */,
+				BE26C2B6236DF5390060C885 /* TimeTableModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE54F9E0230D9D170007D5C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE54F9E9230D9D170007D5C8 /* VUCHOBE_1_0Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE54F9EB230D9D170007D5C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE54F9F4230D9D170007D5C8 /* VUCHOBE_1_0UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE54F9E6230D9D170007D5C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE54F9CF230D9D160007D5C8 /* VUCHOBE 1.0 */;
+			targetProxy = BE54F9E5230D9D170007D5C8 /* PBXContainerItemProxy */;
+		};
+		BE54F9F1230D9D170007D5C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE54F9CF230D9D160007D5C8 /* VUCHOBE 1.0 */;
+			targetProxy = BE54F9F0230D9D170007D5C8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BE54F9D7230D9D160007D5C8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE54F9D8230D9D160007D5C8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BE54F9DC230D9D170007D5C8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE54F9DD230D9D170007D5C8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE54F9F6230D9D170007D5C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BE54F9F7230D9D170007D5C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE54F9F9230D9D170007D5C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KS2TU5KP5R;
+				INFOPLIST_FILE = "VUCHOBE 1.0/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "nss.VUCHOBE-1-0";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE54F9FA230D9D170007D5C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KS2TU5KP5R;
+				INFOPLIST_FILE = "VUCHOBE 1.0/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "nss.VUCHOBE-1-0";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BE54F9FC230D9D170007D5C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KS2TU5KP5R;
+				INFOPLIST_FILE = "VUCHOBE 1.0Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "nss.VUCHOBE-1-0Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VUCHOBE 1.0.app/VUCHOBE 1.0";
+			};
+			name = Debug;
+		};
+		BE54F9FD230D9D170007D5C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KS2TU5KP5R;
+				INFOPLIST_FILE = "VUCHOBE 1.0Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "nss.VUCHOBE-1-0Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VUCHOBE 1.0.app/VUCHOBE 1.0";
+			};
+			name = Release;
+		};
+		BE54F9FF230D9D170007D5C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KS2TU5KP5R;
+				INFOPLIST_FILE = "VUCHOBE 1.0UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "nss.VUCHOBE-1-0UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "VUCHOBE 1.0";
+			};
+			name = Debug;
+		};
+		BE54FA00230D9D170007D5C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KS2TU5KP5R;
+				INFOPLIST_FILE = "VUCHOBE 1.0UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "nss.VUCHOBE-1-0UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "VUCHOBE 1.0";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE54F9CB230D9D160007D5C8 /* Build configuration list for PBXProject "VUCHOBE 1.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE54F9F6230D9D170007D5C8 /* Debug */,
+				BE54F9F7230D9D170007D5C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE54F9F8230D9D170007D5C8 /* Build configuration list for PBXNativeTarget "VUCHOBE 1.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE54F9F9230D9D170007D5C8 /* Debug */,
+				BE54F9FA230D9D170007D5C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE54F9FB230D9D170007D5C8 /* Build configuration list for PBXNativeTarget "VUCHOBE 1.0Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE54F9FC230D9D170007D5C8 /* Debug */,
+				BE54F9FD230D9D170007D5C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE54F9FE230D9D170007D5C8 /* Build configuration list for PBXNativeTarget "VUCHOBE 1.0UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE54F9FF230D9D170007D5C8 /* Debug */,
+				BE54FA00230D9D170007D5C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE54F9C8230D9D160007D5C8 /* Project object */;
+}
