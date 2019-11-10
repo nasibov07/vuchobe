@@ -15,22 +15,22 @@ class MyURLAddress{
     
     //MARK: Авторизация регистрация
     //URl на Авторизацию
-    let UrlForAuthorization: String = "http://5.188.54.67/api/v1/auth/login"
+    let UrlForAuthorization: String                     = "http://vuchobe.com/api/v1/auth/login"
     //URL на Регистрацию
-    let UrlForRegistration:  String = "http://5.188.54.67/api/v1/auth/registration/STUDENT"
+    let UrlForRegistration:  String                     = "http://vuchobe.com/api/v1/auth/registration/STUDENT"
     
     
     //MARK: Рекомендации
     //URL адрес для получения рекомендации на главное окно
-    let UrlForGettingRecommendation: String = "http://5.188.54.67/api/v1/activity"
+    let UrlForGettingRecommendation: String             = "http://vuchobe.com/api/v1/activity"
     //URL адрес для полчения данных для comboBox с типами рекомендации
-    let UrlForGettingType: String = "http://5.188.54.67/api/v1/activity/type"
+    let UrlForGettingType: String                       = "http://vuchobe.com/api/v1/activity/type"
     //URL адрес для создания мероприятия
-    let UrlForCreatRecommendation: String = "http://5.188.54.67/api/v1/activity"
+    let UrlForCreatRecommendation: String               = "http://vuchobe.com/api/v1/activity"
     //URL для получения мероприятия
-    let UrlForShowRecommendation: String = "http://5.188.54.67/api/v1/activity"
+    let UrlForShowRecommendation: String                = "http://vuchobe.com/api/v1/activity"
     
     //MARK: Профиль
     //URL для получение название факультета
-    let UrlForGettingUniversityName: String = "http://5.188.54.67/api/v1/faculty"
+    let UrlForGettingUniversityName: String             = "http://vuchobe.com/api/v1/faculty"
 }

@@ -19,16 +19,17 @@ class ModelClass: Codable{
 
 class ModelClassContent: Codable{
     var id: Int?
-    var name: String?
+    var name: String? = "nil"
     var type: String?
     var description: String?
-    var fullName: String?
     var shortName: String?
     
-    var address: Address?
-    //var images: [String]?
+    var fullName: String?
     
-    init(id: Int?, name: String?, type: String?, description: String?, fullName: String?, shortName: String?, address: Address?){//, images: [String]?
+    var address: Address?
+    var images: [ImageModel]?
+    
+    init(id: Int?, name: String?, type: String?, description: String?, fullName: String?, shortName: String?, address: Address?, images: [ImageModel]?){
         self.id = id
         self.name = name
         self.type = type
@@ -36,15 +37,22 @@ class ModelClassContent: Codable{
         self.fullName = fullName
         self.shortName = shortName
         self.address = address
-        //self.images = images
-        
+        self.images = images
     }
 }
 
+
+
 class Address: Codable {
     var fullAddress: String?
-    
     init(fullAddress: String?){
         self.fullAddress = fullAddress
+    }
+}
+
+class ImageModel: Codable {
+    var image: String?
+    init(image: String?){
+        self.image = image
     }
 }

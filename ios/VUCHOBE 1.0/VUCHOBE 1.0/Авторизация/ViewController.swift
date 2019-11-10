@@ -44,7 +44,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     //var reachability: Reachability?
     var reachability: Reachability?
     
-    
     //Гавная функция swift
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,9 +51,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         authStyleWindow()
         //действие: запуск клавиатуры
         registerForKeyboardNotifications()
-    
-        
-        
+
     }
     //парсинг jwt
     func getJwtBodyString(tokenstr: String) -> NSString {
@@ -81,48 +78,48 @@ class ViewController: UIViewController, UITextFieldDelegate {
     //действие: вход в приложение
     @IBAction func enterActionButton(_ sender: Any) {
         
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "TabBarController") as! TabBarController
-                          vc.modalPresentationStyle = .fullScreen
-                          self.present(vc, animated: false, completion: nil)
-                          self.activityIndicator.isHidden = !self.activityIndicator.isHidden
-                          self.navigationController?.pushViewController(vc, animated: true)
+//        let vc = self.storyboard?.instantiateViewController(withIdentifier: "TabBarController") as! TabBarController
+//                          vc.modalPresentationStyle = .fullScreen
+//                          self.present(vc, animated: false, completion: nil)
+//                          self.activityIndicator.isHidden = !self.activityIndicator.isHidden
+//                          self.navigationController?.pushViewController(vc, animated: true)
         
         
-//        emailViewLine.layer.backgroundColor = UIColor.gray.cgColor
-//        passwordViewLine.layer.backgroundColor = UIColor.gray.cgColor
-//        //проверка интернета
-//        testInternet()
-//
-//        let username = emailTextField.text
-//        let password = passwordTextField.text
-//        var bool = true
-//
-//        //проверка и вывод ошибки
-//        if(internetBool != true){
-//            if((username == "") && (password == "")){
-//                errorTextLable.text = "Введите почту и пароль"
-//                emailViewLine.layer.backgroundColor = UIColor.red.cgColor
-//                passwordViewLine.layer.backgroundColor = UIColor.red.cgColor
-//                bool = false
-//            }else{
-//                if(username == ""){
-//                    bool = false
-//                    emailViewLine.layer.backgroundColor = UIColor.red.cgColor
-//                    errorTextLable.text = "Введите почту"
-//                }
-//                if(password == ""){
-//                    bool = false
-//                    passwordViewLine.layer.backgroundColor = UIColor.red.cgColor
-//                    errorTextLable.text = "Введите пароль"
-//                }
-//            }//запрос на авторизацию
-//            if(bool == true){
-//
-//                activityIndicator.isHidden = !activityIndicator.isHidden
-//                activityIndicator.startAnimating()
-//                enterRequestFunc(username: username!, password: password!)
-//            }
-//        }
+        emailViewLine.layer.backgroundColor = UIColor.gray.cgColor
+        passwordViewLine.layer.backgroundColor = UIColor.gray.cgColor
+        //проверка интернета
+        testInternet()
+
+        let username = emailTextField.text
+        let password = passwordTextField.text
+        var bool = true
+
+        //проверка и вывод ошибки
+        if(internetBool != true){
+            if((username == "") && (password == "")){
+                errorTextLable.text = "Введите почту и пароль"
+                emailViewLine.layer.backgroundColor = UIColor.red.cgColor
+                passwordViewLine.layer.backgroundColor = UIColor.red.cgColor
+                bool = false
+            }else{
+                if(username == ""){
+                    bool = false
+                    emailViewLine.layer.backgroundColor = UIColor.red.cgColor
+                    errorTextLable.text = "Введите почту"
+                }
+                if(password == ""){
+                    bool = false
+                    passwordViewLine.layer.backgroundColor = UIColor.red.cgColor
+                    errorTextLable.text = "Введите пароль"
+                }
+            }//запрос на авторизацию
+            if(bool == true){
+
+                activityIndicator.isHidden = !activityIndicator.isHidden
+                activityIndicator.startAnimating()
+                enterRequestFunc(username: username!, password: password!)
+            }
+        }
     }
 
     //показать пароль
@@ -203,16 +200,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
             print("data:", a as Any)
             
             if(data != nil){
-                print("Good")
-                DispatchQueue.main.async {
-                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "TabBarController") as! TabBarController
-                    vc.modalPresentationStyle = .fullScreen
-                    self.present(vc, animated: false, completion: nil)
-                    self.activityIndicator.isHidden = !self.activityIndicator.isHidden
-                    self.navigationController?.pushViewController(vc, animated: true)
-                }
+                
             }else{
-
                 self.showMiniWindows(titleText: "Информация ", MessageText: "Токен с сервера не был получен.")
                 self.activityIndicator.isHidden = !self.activityIndicator.isHidden
             }
@@ -234,8 +223,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 }
             }else{
                 //let inform = String(data: data!, encoding: .utf8)
-                DispatchQueue.main.async {
-                }
+               
+                    print("Good")
+                    DispatchQueue.main.async {
+                        let vc = self.storyboard?.instantiateViewController(withIdentifier: "TabBarController") as! TabBarController
+                        vc.modalPresentationStyle = .fullScreen
+                        self.present(vc, animated: false, completion: nil)
+                        self.activityIndicator.isHidden = !self.activityIndicator.isHidden
+                        self.navigationController?.pushViewController(vc, animated: true)
+                    }
+                
             }
             
             if let httpResponse = response as? HTTPURLResponse

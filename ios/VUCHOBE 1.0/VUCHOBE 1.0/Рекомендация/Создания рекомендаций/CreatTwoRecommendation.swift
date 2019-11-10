@@ -108,8 +108,8 @@ class CreatTwoRecommendation: UIViewController, UITextViewDelegate {
     }
     
     func resizeImage(image: UIImage, newWidth: CGFloat) -> UIImage {
-        let width = 1024
-        let height = 1024
+        let width = 500
+        let height = 500
         
         UIGraphicsBeginImageContext(CGSize(width: width, height: height))
         image.draw(in: CGRect(x: 0, y: 0, width: width, height: height))
@@ -142,9 +142,16 @@ class CreatTwoRecommendation: UIViewController, UITextViewDelegate {
         let json: [String: Any] = [
             "instituteId": 6,
             "typeId": 7,
-            "name": "Хакатон для IT AS",
-            "description": "Самое крутое мероприятие",
-            "imagesBase64": ["\(imageLittle)","\(imageBigBase64)"]
+            "name": recommendationName,
+            "shortDescription": shortName,
+            "description": myTextView.text!,
+            "imagesBase64": [
+                imageLittle,
+                imageBigBase64
+            ],
+             "address": [
+                "fullAddress": recommendationAddress
+            ]
         ]
         
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
@@ -228,7 +235,7 @@ extension CreatTwoRecommendation: UIImagePickerControllerDelegate, UINavigationC
             let a = self.resizeImage(image: pickedImage, newWidth: view.frame.size.width)
             self.image.image = a
             let imageData   = image.image!.pngData()!
-            imageBigBase64   = imageData.base64EncodedString(options: .lineLength64Characters)
+            imageBigBase64  = imageData.base64EncodedString(options: .lineLength64Characters)
         }
         picker.dismiss(animated: true, completion: nil)
     }

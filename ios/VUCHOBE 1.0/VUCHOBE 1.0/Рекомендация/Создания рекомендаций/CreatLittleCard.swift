@@ -20,9 +20,37 @@ class CreatLittleCard: UIViewController, UITextFieldDelegate {
         destinationVC.typeName = typeName
         destinationVC.recommendationName = nameRecommendationLabel.text!
         destinationVC.shortName = shortDescriptionLabel.text!
-        //destinationVC.imageLittle = imageBase64
+        destinationVC.imageLittle = imageBase64
     }
     
+    func resizeImage(image: UIImage, newWidth: CGFloat) -> UIImage {
+        let width = 500
+        let height = 500
+        
+        UIGraphicsBeginImageContext(CGSize(width: width, height: height))
+        image.draw(in: CGRect(x: 0, y: 0, width: width, height: height))
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return newImage!
+    }
+    
+    //Нахождения максимального значение среди двух чисел
+    func findMax(width: CGFloat , height : CGFloat) -> CGFloat{
+        if( width > height ){
+            return width
+        }else{
+            return height
+        }
+    }
+    
+    //Нахождения минимального значение среди двух чисел
+    func findMin(width: CGFloat , height : CGFloat) -> CGFloat{
+        if( width > height ){
+            return height
+        }else{
+            return width
+        }
+    }
     
     @IBOutlet weak var scrollView: UIScrollView!
     var imagePicker: UIImagePickerController!
@@ -36,7 +64,7 @@ class CreatLittleCard: UIViewController, UITextFieldDelegate {
     var recommendationData: String = ""
     //Тип
     var typeName: String = ""
-    
+    var imageBigBase64: String = ""
     //Label
     @IBOutlet weak var nameRecommendationLabel: UILabel!
     @IBOutlet weak var shortDescriptionLabel: UILabel!
@@ -168,9 +196,14 @@ extension CreatLittleCard: UIImagePickerControllerDelegate, UINavigationControll
     
     func imagePickerController(_ picker: UIImagePickerController,didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]){
         if let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
-            self.image.image = pickedImage
-            let imageData   = image.image!.pngData()!
-            imageBase64   = imageData.base64EncodedString(options: .lineLength64Characters)
+            let a = self.resizeImage(image: pickedImage, newWidth: view.frame.size.width)
+            self.image.image = a
+            let imageData = image.image!.pngData()!
+            imageBigBase64 = imageData.base64EncodedString(options: .lineLength64Characters)
+          
+            //self.image.image = pickedImage
+            //let imageData   = image.image!.pngData()!
+            //imageBase64   = imageData.base64EncodedString(options: .lineLength64Characters)
         }
         picker.dismiss(animated: true, completion: nil)
     }

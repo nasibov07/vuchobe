@@ -46,7 +46,7 @@ class Recommendation: UIViewController, UITableViewDelegate, UITableViewDataSour
 //        }else{
 //            vc.titleTextLabel.text = "Мероприятие"
 //        }
-//        
+//
 //        if(result[indexPath.row].description != ""){
 //             vc.bodyTextLabel.text = result[indexPath.row].description
 //        }else{
